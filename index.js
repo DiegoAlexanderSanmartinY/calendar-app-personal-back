@@ -23,6 +23,7 @@ app.use(express.json());
 //TODO: auth // crear, login, renew
 app.use("/api/auth", require("./routes/auth"));
 //TODO: events // create, get, update, delete
+app.use("/api/events", require("./routes/events"));
 
 app.listen(process.env.PORT, () => {
   console.log("Server running on port 4000");
